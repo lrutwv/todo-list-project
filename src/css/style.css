@@ -8,10 +8,10 @@
 body {
     font-family: "Trebuchet MS", Arial, sans-serif;
     background: linear-gradient(
-        135deg,
-        #E7D8C7,
-        #DECBB8 50%,
-        #D7C1AD
+       135deg,
+       #DCC9B7,
+       #D3BDAA 50%,
+       #CCB5A1
     );
     color: #3D3030;
     min-height: 100vh;
@@ -55,13 +55,17 @@ button {
 .sidebar nav a {
     display: block;
     margin-bottom: 40px;
+    padding: 8px 10px;
+    border-radius: 5px;
     color: #3D3030;
     text-decoration: none;
     font-size: 15px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .sidebar nav a:hover {
-    color: #A96850;
+    background-color: #D6C0AD;
+    color: #8C5A66;
 }
 
 
@@ -235,6 +239,7 @@ button {
     background: transparent;
     color: #A96850;
     cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .add-todo:hover {
@@ -268,13 +273,17 @@ button {
 
     border: 1px solid #CDB7A4;
     border-radius: 6px;
+    border-left: 2px solid ;
 
-    background-color: #F8EFE5;
+    background-color: #EDE0D2;
+    transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
 .todo-card:hover {
     border-color: #A96850;
     cursor: pointer;
+    transform: translateY(-2px);
+
 }
 
 .todo-info h4 {
@@ -331,7 +340,7 @@ button {
     padding: 20px;
     border: 1px solid #CDB7A4;
     border-radius: 6px;
-    background-color: #F8EFE5;
+    background-color: #EDE0D2;
 }
 
 .todo-card-description {
