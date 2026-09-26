@@ -134,6 +134,13 @@ button {
 .projects .new-project {
     margin-top: 25px;
     color: #A96850;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+.projects .new-project:hover {
+    background-color: #D6C0AD;
+    color: #8C5A66;
 }
 
 
