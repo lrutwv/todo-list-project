@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nocturne</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <aside class="sidebar">
+
+            <h1>Nocturne</h1>
+
+            <nav>
+                <a href="#" class="all-tasks">All Tasks</a>
+            </nav>
+
+            <div class="projects">
+
+                <h2>Projects</h2>
+
+                <div class="project-item">
+    <button class="project-button" data-project="University">
+        University
+    </button>
+
+    <button class="delete-project" data-project="University">
+        ×
+    </button>
+</div>
+
+<div class="project-item">
+    <button class="project-button" data-project="Coding">
+        Coding
+    </button>
+
+    <button class="delete-project" data-project="Coding">
+        ×
+    </button>
+</div>
+
+<div class="project-item">
+    <button class="project-button" data-project="Design">
+        Design
+    </button>
+
+    <button class="delete-project" data-project="Design">
+        ×
+    </button>
+</div>
+
+               <button class="new-project">
+    + New Project
+</button>
+
+<form class="project-form">
+    <input
+        type="text"
+        class="project-name"
+        placeholder="Project name"
+        required
+    >
+
+    <button type="submit">
+        Create Project
+    </button>
+</form>
+
+            </div>
+
+        </aside>
+
+
+        <main class="main-content">
+
+            <header class="page-header">
+                <p class="date">Tuesday, August 25</p>
+                <h2 class="project-title">University</h2>
+            </header>
+
+
+            <section class="todo-section">
+
+                <div class="section-header">
+                    <h3>Things to do</h3>
+
+                    <button class="add-todo">
+                        + Add Task
+                    </button>
+                </div>
+
+                <form class="todo-form">
+
+               <input
+                   type="text"
+                   class="todo-title"
+                   placeholder="Task title"
+                   required
+               >
+
+                       <textarea
+                           class="todo-description"
+                           placeholder="Description"
+                       ></textarea>
+
+                       <input
+                           type="date"
+                           class="todo-date"
+                           required
+                       >
+
+             <select class="todo-priority">
+                 <option value="low">Low</option>
+                 <option value="medium">Medium</option>
+                 <option value="high">High</option>
+             </select>
+
+             <button type="submit" class="submit-todo">
+                 Add Task
+             </button>
+
+              </form>
+
+                <div class="todo-list">
+
+                   
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
