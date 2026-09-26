@@ -272,7 +272,8 @@ button {
     padding: 20px 22px;
 
     border: 1px solid #CDB7A4;
-    border-radius: 6px;
+    border-radius: 7px;
+    overflow: hidden;
     border-left: 4px solid #CDB7A4;
 
     background-color: #EDE0D2;

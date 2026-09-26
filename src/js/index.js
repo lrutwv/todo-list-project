@@ -36,6 +36,7 @@ let currentProject = projects[0];
 
 const projectsContainer = document.querySelector(".projects");
 const projectTitle = document.querySelector(".project-title");
+const dateDisplay = document.querySelector(".date");
 const addTodoButton = document.querySelector(".add-todo");
 const todoList = document.querySelector(".todo-list");
 const todoForm = document.querySelector(".todo-form");
@@ -44,6 +45,13 @@ const newProjectButton = document.querySelector(".new-project");
 const projectForm = document.querySelector(".project-form");
 const allTasksButton = document.querySelector(".all-tasks");
 
+const today = new Date();
+
+dateDisplay.textContent = today.toLocaleDateString("en-US", {
+    weekday: "long",
+    month: "long",
+    day: "numeric"
+});
 
 function deleteTodo(todoToDelete) {
     currentProject.todos = currentProject.todos.filter((todo) => {
