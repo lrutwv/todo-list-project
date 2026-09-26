@@ -273,10 +273,22 @@ button {
 
     border: 1px solid #CDB7A4;
     border-radius: 6px;
-    border-left: 2px solid ;
+    border-left: 4px solid #CDB7A4;
 
     background-color: #EDE0D2;
     transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.todo-card:has(.priority.high) {
+    border-left-color: #B76E79;
+}
+
+.todo-card:has(.priority.medium) {
+    border-left-color: #B78A5A;
+}
+
+.todo-card:has(.priority.low) {
+    border-left-color: #7D9274;
 }
 
 .todo-card:hover {
