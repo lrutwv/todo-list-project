@@ -22,6 +22,13 @@ export default {
 
     module: {
         rules: [
+
+            {
+                test: /\.js$/i,
+                exclude: /node_modules/,
+                use: "babel-loader"
+            },
+            
             {
                 test: /\.css$/i,
                 use: ["style-loader", "css-loader"]
